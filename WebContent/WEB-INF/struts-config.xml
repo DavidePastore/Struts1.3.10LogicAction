@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+    <form-beans>
+    	<form-bean name="LogicForm" type="it.meucci.form.LogicForm"/>
+    </form-beans>
+
+    <action-mappings>
+    	<action path="/inputLogic" type="it.meucci.action.MyForwardAction" name="InputLogic">
+			<forward name="success" path="/pages/inputLogic.jsp"/>
+		</action>
+    
+    
+    	<action path="/logicAction" type="it.meucci.action.LogicAction" name="LogicForm" input="/pages/inputLogic.jsp" cancellable="true">
+        	<forward name="success" path="/pages/output.jsp" />
+        </action>
+    </action-mappings>
+
+</struts-config>
