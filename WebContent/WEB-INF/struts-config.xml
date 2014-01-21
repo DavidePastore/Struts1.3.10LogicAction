@@ -11,9 +11,7 @@
     </form-beans>
 
     <action-mappings>
-    	<action path="/inputLogic" type="it.meucci.action.MyForwardAction" name="InputLogic">
-			<forward name="success" path="/pages/inputLogic.jsp"/>
-		</action>
+    	<action path="/inputLogic" type="org.apache.struts.actions.ForwardAction" parameter="/pages/inputLogic.jsp" />
     
     
     	<action path="/logicAction" type="it.meucci.action.LogicAction" name="LogicForm" input="/pages/inputLogic.jsp" cancellable="true">

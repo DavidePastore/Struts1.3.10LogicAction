@@ -4,7 +4,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html:html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
 <title>Esempio tag logic</title>
 </head>
 
@@ -17,7 +17,7 @@
 	Nella pagina di output <b>logic:equal</b> funzionerà se il valore inserito sarà 1.
 	Altrimenti verrà eseguito <b>logic:notEqual</b>.
 	
-	<br> <html:submit value="Submit" /> <html:cancel />
+	<br/> <html:submit value="Submit" /> <html:cancel />
 	</html:form>
 
 </body>
